@@ -1,0 +1,73 @@
+
+	$themePrimary: '[theme:themePrimary, default:#004578]'; 
+  $themeWhite: '[theme:white, default:white]'; 
+  
+ .categoryItem { 
+  font-size: 16px; 
+  //background-color: $themePrimary; 
+  color: $themeWhite; 
+  font-weight: bold;
+  padding: 4px; 
+  margin: 4px 0px; 
+} 
+
+.footerMenuItem { 
+  font-size: 13px; 
+       padding: 3px; 
+       color: $themeWhite; 
+       cursor: pointer; 
+    } 
+
+.footerMenuItem a:link , .footerMenuItem a:hover
+{
+  color:white;
+  text-decoration: none;
+
+}
+
+    
+.footerLogo
+{
+  text-align: center;
+  margin-top: 12px;
+  align-self : center; 
+  
+}
+
+.customMSGridRow
+{
+  display: flex;
+}
+
+
+@media(max-width: 768px) {
+.customMSGridRow
+{
+  display: block;
+
+}
+    
+.footerLogo
+{
+  text-align: left;
+}
+}
+
+/* IE footer issue*/
+// div[class*="pageLayoutRoot"], 
+// div[class^="pageLayoutRoot_"], 
+// div[class^="pageLayoutRoot_d1803a1d"],
+// .pageLayoutRoot_d1803a1d {
+//     display: block !important;
+// }
+
+
+div[class^="od-ItemDragDrop--absolute"]{
+  height: 100%;
+}
+div[data-footerBox="false"] {
+  display: none;
+}
+div[data-footerBox="true"] {
+  display: block;
+}
